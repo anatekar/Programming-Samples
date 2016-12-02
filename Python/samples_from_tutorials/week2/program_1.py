@@ -1,5 +1,5 @@
 '''
-	Program to swap two numbers entered by the user
+    Program to swap two numbers entered by the user
 '''
 # pylint: disable=C0103
 Number1 = input("Enter 1st number: ")
