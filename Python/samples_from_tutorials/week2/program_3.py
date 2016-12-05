@@ -13,8 +13,7 @@
 
 '''
 
-temperature_in_celcius_str = raw_input("Enter temp in celcius: ")
-temperature_in_celcius = float(temperature_in_celcius_str)
+temperature_in_celcius = float(raw_input("Enter temp in celcius: "))
 temperature_in_fahrenheit = (temperature_in_celcius * 9/5) + 32
 celcius_symbol = u"\u2103"
 fahrenheit_symbol = u"\u2109"

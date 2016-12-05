@@ -16,12 +16,14 @@ def get_cube(n):
     ''' Returns cube of a number i.e. n*n*n'''
     return n*n*n
 
+get_cube_lambda = lambda n: n**3
+
 def is_armstrong(num):
     ''' determines if a number is an armstrong number or not'''
     armstrong_sum = 0
     number_str = str(num)
     for value in number_str:
-        armstrong_sum += get_cube(int(value))
+        armstrong_sum += get_cube_lambda(int(value))
     if armstrong_sum == num:
         return True
     else:

@@ -19,6 +19,8 @@ my_list_of_list = [["john", 1, "a"], 	\
 	   	   ["xyz", 12, "c"], 	\
 		   ["yuv", 5, "z"]]
 
+
 print 'Original list is ', my_list_of_list
-my_list_of_list.sort(my_list_compare)
+#my_list_of_list.sort(my_list_compare)
+my_list_of_list.sort(key=lambda x: x[1])
 print 'Sorted list is ', my_list_of_list

@@ -14,7 +14,14 @@ def inverse_key_values(original_dict):
         num_items += 1
     return new_dict
 
+def inverse_key_values_using_zip(original_dict):
+    ''' Function to inverse key:value pairs of a dictionary'''
+    keys = original_dict.keys()
+    values = original_dict.values()
+    return dict(zip(values,keys))
+
+
 
 d = {1:'a', 2:'b', 3:'b'}
 print 'Original dictionary is : ', d
-print 'Inverse dictionary is :', inverse_key_values(d)
+print 'Inverse dictionary is :', inverse_key_values_using_zip(d)

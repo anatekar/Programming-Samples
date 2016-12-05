@@ -19,6 +19,9 @@ def count_vowels(statement):
     vowels = "aeiouAEIOU"
     number_of_vowels = len([character for character in statement \
 					if character in vowels])
+    number_of_vowels_using_filter = len(filter(lambda character: True \
+                                            if character in vowels else False, statement))
+    assert number_of_vowels_using_filter == number_of_vowels
     return number_of_vowels
 
 stmt = raw_input("Enter your statement: ")
